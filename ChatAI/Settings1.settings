@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ChatAI" GeneratedClassName="Settings1">
+  <Profiles />
+  <Settings>
+    <Setting Name="mensajeIA" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Me llamo Takezo y soy un asistente que habla en español, y me comporto como un samurái.</Value>
+    </Setting>
+    <Setting Name="IA" Type="System.String" Scope="User">
+      <Value Profile="(Default)">llama3.2-1b-instruct</Value>
+    </Setting>
+    <Setting Name="urlLocalhost" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://localhost:1337/v1/chat/completions</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="22.4" version="22.4" PreviousModules="professional" Modules="enterprise" RootPath="." Language="es" Id="{B97136D9-CD64-46DB-8FCE-92B1041B3DFB}">
+  <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
+    <ROW Name="HiddenItems" Value="ActSyncAppComponent;CPLAppletComponent;ActSyncAppComponent;CPLAppletComponent;AutorunComponent;GameUxComponent;SilverlightSlnComponent;SharePointSlnComponent"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="Esta base de datos del instalador contiene la lógica y los datos necesarios para instalar [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPPRODUCTICON" Value="IyPwYJ59e7.exe" Type="8"/>
+    <ROW Property="Manufacturer" Value="DAM IES GREGORIO PRIETO"/>
+    <ROW Property="ProductCode" Value="3082:{3C99DB4C-8ABD-43C4-A7FC-296D83981A7F} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="MIA"/>
+    <ROW Property="ProductVersion" Value="1.0.0" Options="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{8D49A875-13CD-4CDD-B165-BF11F5B08EB8}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="AnyCPU_Release:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="AnyCPU_Release:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="AnyCPU_Release:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="AnyCPU_Release:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="AnyCPU_Release:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="AnyCPU_Release:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="AnyCPU_Release:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="AnyCPU_Release:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60" MultiBuildValue="AnyCPU_Release:Windows Vista/Server 2008" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60Display" MultiBuildValue="AnyCPU_Release:Windows Vista/Server 2008" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1" DirectoryOptions="3"/>
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="DESKTO~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="Images_Dir" Directory_Parent="Resource_Dir" DefaultDir="Images" DirectoryOptions="3"/>
+    <ROW Directory="Resource_Dir" Directory_Parent="APPDIR" DefaultDir="Resource" DirectoryOptions="3"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="am_Dir" Directory_Parent="voskmodelsmalles0.42_Dir" DefaultDir="am" DirectoryOptions="3"/>
+    <ROW Directory="browser_Dir" Directory_Parent="runtimes_Dir" DefaultDir="browser" DirectoryOptions="3"/>
+    <ROW Directory="conf_Dir" Directory_Parent="voskmodelsmalles0.42_Dir" DefaultDir="conf" DirectoryOptions="3"/>
+    <ROW Directory="graph_Dir" Directory_Parent="voskmodelsmalles0.42_Dir" DefaultDir="graph" DirectoryOptions="3"/>
+    <ROW Directory="ivector_Dir" Directory_Parent="voskmodelsmalles0.42_Dir" DefaultDir="ivector" DirectoryOptions="3"/>
+    <ROW Directory="lib_1_Dir" Directory_Parent="win_Dir" DefaultDir="lib" DirectoryOptions="3"/>
+    <ROW Directory="lib_Dir" Directory_Parent="browser_Dir" DefaultDir="lib" DirectoryOptions="3"/>
+    <ROW Directory="net8.0_1_Dir" Directory_Parent="lib_1_Dir" DefaultDir="net8.0" DirectoryOptions="3"/>
+    <ROW Directory="net8.0_Dir" Directory_Parent="lib_Dir" DefaultDir="net8.0" DirectoryOptions="3"/>
+    <ROW Directory="phones_Dir" Directory_Parent="graph_Dir" DefaultDir="phones" DirectoryOptions="3"/>
+    <ROW Directory="runtimes_Dir" Directory_Parent="APPDIR" DefaultDir="runtimes" DirectoryOptions="3"/>
+    <ROW Directory="voskmodelsmalles0.42_Dir" Directory_Parent="Resource_Dir" DefaultDir="VOSK-M~1.42|vosk-model-small-es-0.42" DirectoryOptions="3"/>
+    <ROW Directory="win_Dir" Directory_Parent="runtimes_Dir" DefaultDir="win" DirectoryOptions="3"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SideBySideGuidComponent">
+    <ROW Component="APPDIR" Value="{2C450BBC-87FC-4070-91B3-84CDC9C6863A}"/>
+    <ROW Component="ProductInformation" Value="{C4E4CF18-2E50-47CD-A7E4-191B084E1395}"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="APPDIR" ComponentId="{2C450BBC-87FC-4070-91B3-84CDC9C6863A}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="ChatAI.dll" ComponentId="{F80B3F91-2C2A-40E6-A0B1-F930132801F5}" Directory_="APPDIR" Attributes="0" KeyPath="ChatAI.dll"/>
+    <ROW Component="ChatAI.dll.config" ComponentId="{F044CA86-0FD7-4482-AF87-870A4B70F834}" Directory_="APPDIR" Attributes="0" KeyPath="ChatAI.dll.config" Type="0"/>
+    <ROW Component="ChatAI.exe" ComponentId="{5DD01C53-CED1-4066-99AD-4E810EA5252C}" Directory_="APPDIR" Attributes="256" KeyPath="ChatAI.exe"/>
+    <ROW Component="Manual_Proyecto_MIA.pdf" ComponentId="{166105C6-B476-48B5-AD9A-09D3DD4F461F}" Directory_="SHORTCUTDIR" Attributes="0" KeyPath="Manual_Proyecto_MIA.pdf" Type="0"/>
+    <ROW Component="NAudio.Asio.dll" ComponentId="{0B5EEE92-6838-4673-9C92-4EDAA2013C31}" Directory_="APPDIR" Attributes="0" KeyPath="NAudio.Asio.dll"/>
+    <ROW Component="NAudio.Core.dll" ComponentId="{BE60CD9A-D391-4164-B6A6-A0AC1C0B6BD0}" Directory_="APPDIR" Attributes="0" KeyPath="NAudio.Core.dll"/>
+    <ROW Component="NAudio.Midi.dll" ComponentId="{12F0010E-B6DE-4903-AF36-01701E610A42}" Directory_="APPDIR" Attributes="0" KeyPath="NAudio.Midi.dll"/>
+    <ROW Component="NAudio.Wasapi.dll" ComponentId="{3D6C4242-96E9-40CE-9E9E-872BEF6F377C}" Directory_="APPDIR" Attributes="0" KeyPath="NAudio.Wasapi.dll"/>
+    <ROW Component="NAudio.WinForms.dll" ComponentId="{1C079FD6-CAF7-4A36-94C9-D817869B9086}" Directory_="APPDIR" Attributes="0" KeyPath="NAudio.WinForms.dll"/>
+    <ROW Component="NAudio.WinMM.dll" ComponentId="{CD7ABE59-2379-428A-B3E0-8F9B2FD2AAA5}" Directory_="APPDIR" Attributes="0" KeyPath="NAudio.WinMM.dll"/>
+    <ROW Component="NAudio.dll" ComponentId="{0650C4BE-6B7B-42AA-9808-740F64738A04}" Directory_="APPDIR" Attributes="0" KeyPath="NAudio.dll"/>
+    <ROW Component="ProductInformation" ComponentId="{C4E4CF18-2E50-47CD-A7E4-191B084E1395}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="README" ComponentId="{20C4F869-CE98-4A5E-BCA5-8F2CC3D9F7D9}" Directory_="voskmodelsmalles0.42_Dir" Attributes="0" KeyPath="README_1" Type="0"/>
+    <ROW Component="System.IO.Pipelines.dll" ComponentId="{D0145F27-E1EA-41CA-B0B2-59E9448083D5}" Directory_="APPDIR" Attributes="0" KeyPath="System.IO.Pipelines.dll"/>
+    <ROW Component="System.Speech.dll" ComponentId="{A254E02B-DB4C-4D88-8EB1-CD0414E2DCBC}" Directory_="APPDIR" Attributes="0" KeyPath="System.Speech.dll"/>
+    <ROW Component="System.Speech.dll_1" ComponentId="{969B8B1F-048F-47AF-A5C5-E73CFEBEEC4C}" Directory_="net8.0_1_Dir" Attributes="0" KeyPath="System.Speech.dll_1"/>
+    <ROW Component="System.Text.Encodings.Web.dll" ComponentId="{5140B586-80C8-4FB3-9516-21C821FC8145}" Directory_="APPDIR" Attributes="0" KeyPath="System.Text.Encodings.Web.dll"/>
+    <ROW Component="System.Text.Encodings.Web.dll_1" ComponentId="{C30C4556-341E-452E-A0DB-7FB6B121E862}" Directory_="net8.0_Dir" Attributes="0" KeyPath="System.Text.Encodings.Web.dll_1"/>
+    <ROW Component="System.Text.Json.dll" ComponentId="{F42E38AD-3879-4614-8671-9EABC74DD2E9}" Directory_="APPDIR" Attributes="0" KeyPath="System.Text.Json.dll"/>
+    <ROW Component="Vosk.dll" ComponentId="{55E61858-9596-4D7A-AFC2-83546A344BE0}" Directory_="APPDIR" Attributes="0" KeyPath="Vosk.dll"/>
+    <ROW Component="WpfAnimatedGif.dll" ComponentId="{D3990B6F-0383-4775-80FB-1F52F6366001}" Directory_="APPDIR" Attributes="0" KeyPath="WpfAnimatedGif.dll"/>
+    <ROW Component="disambig_tid.int" ComponentId="{ECA320D0-C972-43B0-B13E-18267D4A4DD3}" Directory_="graph_Dir" Attributes="0" KeyPath="disambig_tid.int_1" Type="0"/>
+    <ROW Component="final.dubm" ComponentId="{2AC62031-B6B8-4673-B67C-5978B4685B88}" Directory_="ivector_Dir" Attributes="0" KeyPath="final.dubm_1" Type="0"/>
+    <ROW Component="final.mdl" ComponentId="{5ECCE5B5-BA19-45FD-801E-51C098B85327}" Directory_="am_Dir" Attributes="0" KeyPath="final.mdl_1" Type="0"/>
+    <ROW Component="katana3.jpg" ComponentId="{A9B845AA-FB22-4EAC-BDFC-9B85766162A9}" Directory_="Images_Dir" Attributes="0" KeyPath="katana3.jpg_1" Type="0"/>
+    <ROW Component="libgcc_s_seh1.dll" ComponentId="{CF3C19C0-8CFB-4EB8-AE79-6593256033EF}" Directory_="APPDIR" Attributes="256" KeyPath="libgcc_s_seh1.dll"/>
+    <ROW Component="libstdc6.dll" ComponentId="{72546597-71A2-452A-85EF-E8193865D53C}" Directory_="APPDIR" Attributes="256" KeyPath="libstdc6.dll"/>
+    <ROW Component="libvosk.dll" ComponentId="{2C44BBE2-9234-4EE5-B352-4473D234422E}" Directory_="APPDIR" Attributes="256" KeyPath="libvosk.dll"/>
+    <ROW Component="libwinpthread1.dll" ComponentId="{739D7CF4-7527-408A-821C-CB4507A86845}" Directory_="APPDIR" Attributes="256" KeyPath="libwinpthread1.dll"/>
+    <ROW Component="mfcc.conf" ComponentId="{80BFE80C-0D97-4939-9A12-25C5EA8F965D}" Directory_="conf_Dir" Attributes="0" KeyPath="mfcc.conf_1" Type="0"/>
+    <ROW Component="word_boundary.int" ComponentId="{88FC4F47-8BD5-4843-AF63-75D617144027}" Directory_="phones_Dir" Attributes="0" KeyPath="word_boundary.int_1" Type="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="ChatAI.dll.config" Component_="ChatAI.dll.config" FileName="CHATAI~1.CON|ChatAI.dll.config" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\ChatAI\bin\Release\net8.0-windows\ChatAI.dll.config" SelfReg="false"/>
+    <ROW File="ChatAI.runtimeconfig.json" Component_="ChatAI.dll.config" FileName="CHATAI~1.JSO|ChatAI.runtimeconfig.json" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\ChatAI\bin\Release\net8.0-windows\ChatAI.runtimeconfig.json" SelfReg="false"/>
+    <ROW File="ChatAI.dll" Component_="ChatAI.dll" FileName="ChatAI.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\ChatAI\bin\Release\net8.0-windows\ChatAI.dll" SelfReg="false"/>
+    <ROW File="libvosk.dll" Component_="libvosk.dll" FileName="libvosk.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\ChatAI\bin\Release\net8.0-windows\libvosk.dll" SelfReg="false"/>
+    <ROW File="ChatAI.exe" Component_="ChatAI.exe" FileName="ChatAI.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\ChatAI\bin\Release\net8.0-windows\ChatAI.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="libstdc6.dll" Component_="libstdc6.dll" FileName="LIBSTD~1.DLL|libstdc++-6.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\ChatAI\bin\Release\net8.0-windows\libstdc++-6.dll" SelfReg="false"/>
+    <ROW File="ChatAI.deps.json" Component_="ChatAI.dll.config" FileName="CHATAI~2.JSO|ChatAI.deps.json" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\ChatAI\bin\Release\net8.0-windows\ChatAI.deps.json" SelfReg="false"/>
+    <ROW File="libgcc_s_seh1.dll" Component_="libgcc_s_seh1.dll" FileName="LIBGCC~1.DLL|libgcc_s_seh-1.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\ChatAI\bin\Release\net8.0-windows\libgcc_s_seh-1.dll" SelfReg="false"/>
+    <ROW File="libwinpthread1.dll" Component_="libwinpthread1.dll" FileName="LIBWIN~1.DLL|libwinpthread-1.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\ChatAI\bin\Release\net8.0-windows\libwinpthread-1.dll" SelfReg="false"/>
+    <ROW File="ChatAI.pdb" Component_="ChatAI.exe" FileName="ChatAI.pdb" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\ChatAI\bin\Release\net8.0-windows\ChatAI.pdb" SelfReg="false"/>
+    <ROW File="katana3.jpg_1" Component_="katana3.jpg" FileName="katana3.jpg" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\ChatAI\bin\Release\net8.0-windows\Resource\Images\katana3.jpg" SelfReg="false"/>
+    <ROW File="final.mdl_1" Component_="final.mdl" FileName="final.mdl" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\ChatAI\bin\Release\net8.0-windows\Resource\vosk-model-small-es-0.42\am\final.mdl" SelfReg="false"/>
+    <ROW File="mfcc.conf_1" Component_="mfcc.conf" FileName="MFCC~1.CON|mfcc.conf" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\ChatAI\bin\Release\net8.0-windows\Resource\vosk-model-small-es-0.42\conf\mfcc.conf" SelfReg="false"/>
+    <ROW File="model.conf_1" Component_="mfcc.conf" FileName="MODEL~1.CON|model.conf" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\ChatAI\bin\Release\net8.0-windows\Resource\vosk-model-small-es-0.42\conf\model.conf" SelfReg="false"/>
+    <ROW File="disambig_tid.int_1" Component_="disambig_tid.int" FileName="DISAMB~1.INT|disambig_tid.int" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\ChatAI\bin\Release\net8.0-windows\Resource\vosk-model-small-es-0.42\graph\disambig_tid.int" SelfReg="false"/>
+    <ROW File="Gr.fst_1" Component_="disambig_tid.int" FileName="Gr.fst" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\ChatAI\bin\Release\net8.0-windows\Resource\vosk-model-small-es-0.42\graph\Gr.fst" SelfReg="false"/>
+    <ROW File="HCLr.fst_1" Component_="disambig_tid.int" FileName="HCLr.fst" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\ChatAI\bin\Release\net8.0-windows\Resource\vosk-model-small-es-0.42\graph\HCLr.fst" SelfReg="false"/>
+    <ROW File="word_boundary.int_1" Component_="word_boundary.int" FileName="WORD_B~1.INT|word_boundary.int" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\ChatAI\bin\Release\net8.0-windows\Resource\vosk-model-small-es-0.42\graph\phones\word_boundary.int" SelfReg="false"/>
+    <ROW File="final.dubm_1" Component_="final.dubm" FileName="FINAL~1.DUB|final.dubm" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\ChatAI\bin\Release\net8.0-windows\Resource\vosk-model-small-es-0.42\ivector\final.dubm" SelfReg="false"/>
+    <ROW File="final.ie_1" Component_="final.dubm" FileName="final.ie" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\ChatAI\bin\Release\net8.0-windows\Resource\vosk-model-small-es-0.42\ivector\final.ie" SelfReg="false"/>
+    <ROW File="final.mat_1" Component_="final.dubm" FileName="final.mat" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\ChatAI\bin\Release\net8.0-windows\Resource\vosk-model-small-es-0.42\ivector\final.mat" SelfReg="false"/>
+    <ROW File="global_cmvn.stats_1" Component_="final.dubm" FileName="GLOBAL~1.STA|global_cmvn.stats" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\ChatAI\bin\Release\net8.0-windows\Resource\vosk-model-small-es-0.42\ivector\global_cmvn.stats" SelfReg="false"/>
+    <ROW File="online_cmvn.conf_1" Component_="final.dubm" FileName="ONLINE~1.CON|online_cmvn.conf" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\ChatAI\bin\Release\net8.0-windows\Resource\vosk-model-small-es-0.42\ivector\online_cmvn.conf" SelfReg="false"/>
+    <ROW File="splice.conf_1" Component_="final.dubm" FileName="SPLICE~1.CON|splice.conf" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\ChatAI\bin\Release\net8.0-windows\Resource\vosk-model-small-es-0.42\ivector\splice.conf" SelfReg="false"/>
+    <ROW File="README_1" Component_="README" FileName="README" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\ChatAI\bin\Release\net8.0-windows\Resource\vosk-model-small-es-0.42\README" SelfReg="false"/>
+    <ROW File="System.Text.Encodings.Web.dll_1" Component_="System.Text.Encodings.Web.dll_1" FileName="SYSTEM~1.DLL|System.Text.Encodings.Web.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\ChatAI\bin\Release\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll" SelfReg="false"/>
+    <ROW File="System.Speech.dll_1" Component_="System.Speech.dll_1" FileName="SYSTEM~1.DLL|System.Speech.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\ChatAI\bin\Release\net8.0-windows\runtimes\win\lib\net8.0\System.Speech.dll" SelfReg="false"/>
+    <ROW File="Manual_Proyecto_MIA.pdf" Component_="Manual_Proyecto_MIA.pdf" FileName="MANUAL~1.PDF|Manual_Proyecto_MIA.pdf" Attributes="0" SourcePath="..\Manual_Proyecto_MIA.pdf" SelfReg="false"/>
+    <ROW File="NAudio.Asio.dll" Component_="NAudio.Asio.dll" FileName="NAUDIO~1.DLL|NAudio.Asio.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\ChatAI\bin\Release\net8.0-windows\NAudio.Asio.dll" SelfReg="false"/>
+    <ROW File="NAudio.Core.dll" Component_="NAudio.Core.dll" FileName="NAUDIO~2.DLL|NAudio.Core.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\ChatAI\bin\Release\net8.0-windows\NAudio.Core.dll" SelfReg="false"/>
+    <ROW File="NAudio.dll" Component_="NAudio.dll" FileName="NAudio.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\ChatAI\bin\Release\net8.0-windows\NAudio.dll" SelfReg="false"/>
+    <ROW File="NAudio.Midi.dll" Component_="NAudio.Midi.dll" FileName="NAUDIO~3.DLL|NAudio.Midi.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\ChatAI\bin\Release\net8.0-windows\NAudio.Midi.dll" SelfReg="false"/>
+    <ROW File="NAudio.Wasapi.dll" Component_="NAudio.Wasapi.dll" FileName="NAUDIO~4.DLL|NAudio.Wasapi.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\ChatAI\bin\Release\net8.0-windows\NAudio.Wasapi.dll" SelfReg="false"/>
+    <ROW File="NAudio.WinForms.dll" Component_="NAudio.WinForms.dll" FileName="NAUDIO~5.DLL|NAudio.WinForms.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\ChatAI\bin\Release\net8.0-windows\NAudio.WinForms.dll" SelfReg="false"/>
+    <ROW File="NAudio.WinMM.dll" Component_="NAudio.WinMM.dll" FileName="NAUDIO~6.DLL|NAudio.WinMM.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\ChatAI\bin\Release\net8.0-windows\NAudio.WinMM.dll" SelfReg="false"/>
+    <ROW File="System.IO.Pipelines.dll" Component_="System.IO.Pipelines.dll" FileName="SYSTEM~1.DLL|System.IO.Pipelines.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\ChatAI\bin\Release\net8.0-windows\System.IO.Pipelines.dll" SelfReg="false"/>
+    <ROW File="System.Speech.dll" Component_="System.Speech.dll" FileName="SYSTEM~2.DLL|System.Speech.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\ChatAI\bin\Release\net8.0-windows\System.Speech.dll" SelfReg="false"/>
+    <ROW File="System.Text.Encodings.Web.dll" Component_="System.Text.Encodings.Web.dll" FileName="SYSTEM~3.DLL|System.Text.Encodings.Web.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\ChatAI\bin\Release\net8.0-windows\System.Text.Encodings.Web.dll" SelfReg="false"/>
+    <ROW File="System.Text.Json.dll" Component_="System.Text.Json.dll" FileName="SYSTEM~4.DLL|System.Text.Json.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\ChatAI\bin\Release\net8.0-windows\System.Text.Json.dll" SelfReg="false"/>
+    <ROW File="Vosk.dll" Component_="Vosk.dll" FileName="Vosk.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\ChatAI\bin\Release\net8.0-windows\Vosk.dll" SelfReg="false"/>
+    <ROW File="WpfAnimatedGif.dll" Component_="WpfAnimatedGif.dll" FileName="WPFANI~1.DLL|WpfAnimatedGif.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\ChatAI\bin\Release\net8.0-windows\WpfAnimatedGif.dll" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="AnyCPU_Release" BuildName="AnyCPU_Release" BuildOrder="1" BuildType="0" Languages="es" InstallationType="4" UseLargeSchema="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_es.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="SetupTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SetupTypeDlg.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="Themes.aip" Path="&lt;AI_FRAGS&gt;Themes.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ROW Dialog_="SetupTypeDlg" Control="BannerLine" Type="Line" X="0" Y="44" Width="372" Height="0" Attributes="1" Order="500" MsiKey="SetupTypeDlg#BannerLine"/>
+    <ROW Dialog_="SetupTypeDlg" Control="TypicalText" Type="Text" X="105" Y="78" Width="230" Height="20" Attributes="3" Text="Instala las más usuales características del programa. Recomendable para la mayoría de los usuarios." Order="600" TextLocId="Control.Text.SetupTypeDlg#TypicalText" MsiKey="SetupTypeDlg#TypicalText"/>
+    <ROW Dialog_="SetupTypeDlg" Control="Title" Type="Text" X="15" Y="6" Width="200" Height="15" Attributes="196611" Text="Elija el tipo de instalación" TextStyle="[DlgTitleFont]" Order="700" TextLocId="Control.Text.SetupTypeDlg#Title" MsiKey="SetupTypeDlg#Title"/>
+    <ROW Dialog_="SetupTypeDlg" Control="Description" Type="Text" X="25" Y="23" Width="280" Height="15" Attributes="196611" Text="Elija el tipo de instalación que más le convenga" Order="800" TextLocId="Control.Text.SetupTypeDlg#Description" MsiKey="SetupTypeDlg#Description"/>
+    <ROW Dialog_="SetupTypeDlg" Control="TypicalLabel" Type="Text" X="105" Y="65" Width="100" Height="10" Attributes="3" Text="&amp;Tipico" TextStyle="[DlgTitleFont]" Order="900" TextLocId="Control.Text.SetupTypeDlg#TypicalLabel" MsiKey="SetupTypeDlg#TypicalLabel"/>
+    <ROW Dialog_="SetupTypeDlg" Control="TypicalButton" Type="PushButton" X="50" Y="65" Width="38" Height="38" Attributes="7864323" Text="[InstallerIcon]" Help="Instalación Tipica|" Order="1000" HelpLocId="Control.Help.SetupTypeDlg#TypicalButton" MsiKey="SetupTypeDlg#TypicalButton"/>
+    <ROW Dialog_="SetupTypeDlg" Control="CustomLabel" Type="Text" X="105" Y="118" Width="100" Height="10" Attributes="3" Text="P&amp;ersonalizada" TextStyle="[DlgTitleFont]" Order="1100" TextLocId="Control.Text.SetupTypeDlg#CustomLabel" MsiKey="SetupTypeDlg#CustomLabel"/>
+    <ROW Dialog_="SetupTypeDlg" Control="CustomButton" Type="PushButton" X="50" Y="118" Width="38" Height="38" Attributes="7864323" Text="[CustomSetupIcon]" Help="Instalación Personalizada|" Order="1200" HelpLocId="Control.Help.SetupTypeDlg#CustomButton" MsiKey="SetupTypeDlg#CustomButton"/>
+    <ROW Dialog_="SetupTypeDlg" Control="CompleteButton" Type="PushButton" X="311" Y="44" Width="6" Height="7" Attributes="7864322" Text="[CompleteSetupIcon]" Help="Instalación Completa|" Order="1300" HelpLocId="Control.Help.SetupTypeDlg#CompleteButton" MsiKey="SetupTypeDlg#CompleteButton"/>
+    <ROW Dialog_="SetupTypeDlg" Control="BottomLine" Type="Line" X="5" Y="234" Width="368" Height="0" Attributes="1" Order="1400" MsiKey="SetupTypeDlg#BottomLine"/>
+    <ROW Dialog_="SetupTypeDlg" Control="Logo" Type="Text" X="4" Y="228" Width="70" Height="12" Attributes="1" Text="Advanced Installer" Order="1500" TextLocId="Control.Text.SetupTypeDlg#Logo" MsiKey="SetupTypeDlg#Logo"/>
+    <ROW Dialog_="SetupTypeDlg" Control="Back" Type="PushButton" X="180" Y="243" Width="56" Height="17" Attributes="3" Text="[ButtonText_Back]" Order="1600" TextLocId="-" MsiKey="SetupTypeDlg#Back" Options="1"/>
+    <ATTRIBUTE name="DeletedRows" value="SetupTypeDlg#CompleteLabel@SetupTypeDlg#CompleteText"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="SetupTypeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="204"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="SetupTypeDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="205"/>
+    <ROW Dialog_="SetupTypeDlg" Control_="TypicalButton" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="SetupTypeDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="102"/>
+    <ROW Dialog_="SetupTypeDlg" Control_="CompleteButton" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL AND InstallMode=InstallModeComplete" Ordering="201"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="SetupTypeDlg" Condition="AI_INSTALL AND InstallMode=InstallModeComplete" Ordering="203"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL AND InstallMode=InstallModeCustom" Ordering="102"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_INSTALL AND InstallMode=InstallModeCustom" Ordering="202"/>
+    <ROW Dialog_="SetupTypeDlg" Control_="CustomButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_INSTALL AND InstallMode=InstallModeCustom" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="SetupTypeDlg" Condition="AI_INSTALL AND InstallMode=InstallModeCustom" Ordering="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Type="65" Source="aicustact.dll" Target="PreserveInstallType"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]" MultiBuildTarget="AnyCPU_Release:[ProgramMenuFolder][Manufacturer]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="ProductInformation"/>
+    <ROW Feature_="MainFeature" Component_="ChatAI.dll.config"/>
+    <ROW Feature_="MainFeature" Component_="ChatAI.dll"/>
+    <ROW Feature_="MainFeature" Component_="Manual_Proyecto_MIA.pdf"/>
+    <ROW Feature_="MainFeature" Component_="libvosk.dll"/>
+    <ROW Feature_="MainFeature" Component_="ChatAI.exe"/>
+    <ROW Feature_="MainFeature" Component_="libstdc6.dll"/>
+    <ROW Feature_="MainFeature" Component_="libgcc_s_seh1.dll"/>
+    <ROW Feature_="MainFeature" Component_="libwinpthread1.dll"/>
+    <ROW Feature_="MainFeature" Component_="katana3.jpg"/>
+    <ROW Feature_="MainFeature" Component_="final.mdl"/>
+    <ROW Feature_="MainFeature" Component_="mfcc.conf"/>
+    <ROW Feature_="MainFeature" Component_="disambig_tid.int"/>
+    <ROW Feature_="MainFeature" Component_="word_boundary.int"/>
+    <ROW Feature_="MainFeature" Component_="final.dubm"/>
+    <ROW Feature_="MainFeature" Component_="README"/>
+    <ROW Feature_="MainFeature" Component_="System.Text.Encodings.Web.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="System.Speech.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="NAudio.Asio.dll"/>
+    <ROW Feature_="MainFeature" Component_="NAudio.Core.dll"/>
+    <ROW Feature_="MainFeature" Component_="NAudio.dll"/>
+    <ROW Feature_="MainFeature" Component_="NAudio.Midi.dll"/>
+    <ROW Feature_="MainFeature" Component_="NAudio.Wasapi.dll"/>
+    <ROW Feature_="MainFeature" Component_="NAudio.WinForms.dll"/>
+    <ROW Feature_="MainFeature" Component_="NAudio.WinMM.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.IO.Pipelines.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Speech.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Text.Encodings.Web.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Text.Json.dll"/>
+    <ROW Feature_="MainFeature" Component_="Vosk.dll"/>
+    <ROW Feature_="MainFeature" Component_="WpfAnimatedGif.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="IyPwYJ59e7.exe" SourcePath="..\IyPwYJ59e7.ico" Index="0"/>
+    <ROW Name="SystemFoldermsiexec.exe" SourcePath="&lt;AI_RES&gt;uninstall.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Sequence="199"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] no se puede instalar en [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="AnyCPU_Release"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] no se puede instalar en [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="AnyCPU_Release"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] no se puede instalar en [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="AnyCPU_Release"/>
+    <ROW Condition="(VersionNT &lt;&gt; 600)" Description="[ProductName] no se puede instalar en [WindowsTypeNT60Display]." DescriptionLocId="AI.LaunchCondition.NoNT60" IsPredefined="true" Builds="AnyCPU_Release"/>
+    <ROW Condition="VersionNT" Description="[ProductName] no se puede instalar en [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="AnyCPU_Release"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Manufacturer" Root="-1" Key="Software\[Manufacturer]" Name="\"/>
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="ProductName" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="\"/>
+    <ROW Registry="Software" Root="-1" Key="Software" Name="\"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="ChatAI.exe" Directory_="SHORTCUTDIR" Name="ChatAI.exe" Component_="ChatAI.exe" Target="[#ChatAI.exe]" Description="ChatAI.exe" Hotkey="0" Icon_="IyPwYJ59e7.exe" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="ChatAI.exe_1" Directory_="DesktopFolder" Name="ChatAI.exe" Component_="ChatAI.exe" Target="[#ChatAI.exe]" Description="ChatAI.exe" Hotkey="0" Icon_="IyPwYJ59e7.exe" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="DesinstaladorProductNameProductVers" Directory_="SHORTCUTDIR" Name="DESINS~1.0|Desinstalador [|ProductName] [|ProductVersion]" Component_="Manual_Proyecto_MIA.pdf" Target="[SystemFolder]msiexec.exe" Arguments="/x [ProductCode]" Hotkey="0" Icon_="SystemFoldermsiexec.exe" IconIndex="0" ShowCmd="1"/>
+    <ROW Shortcut="VinculoaManual_Proyecto_MIA" Directory_="SHORTCUTDIR" Name="VINCUL~1|Vinculo a Manual_Proyecto_MIA" Component_="Manual_Proyecto_MIA.pdf" Target="[#Manual_Proyecto_MIA.pdf]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="SHORTCUTDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SynchronizedFolderComponent">
+    <ROW Directory_="APPDIR" SourcePath="..\ChatAI\bin\Release\net8.0-windows" Feature="MainFeature" ExcludePattern="*~|#*#|%*%|._|CVS|.cvsignore|SCCS|vssver.scc|mssccprj.scc|vssver2.scc|.svn|.DS_Store" ExcludeFlags="6" FileAddOptions="4"/>
+  </COMPONENT>
+</DOCUMENT>

@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35506.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatAI", "ChatAI\ChatAI.csproj", "{C7B3DD3C-53C8-493D-B0BF-4A57BAF536FC}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "MIA", "MIA\MIA.vdproj", "{78E5EB43-04BD-47E4-A9B9-431D544BE06E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7B3DD3C-53C8-493D-B0BF-4A57BAF536FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7B3DD3C-53C8-493D-B0BF-4A57BAF536FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7B3DD3C-53C8-493D-B0BF-4A57BAF536FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7B3DD3C-53C8-493D-B0BF-4A57BAF536FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78E5EB43-04BD-47E4-A9B9-431D544BE06E}.Debug|Any CPU.ActiveCfg = Debug
+		{78E5EB43-04BD-47E4-A9B9-431D544BE06E}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2DB63C9F-5261-4BD7-A31F-22ADBFA41F58}
+	EndGlobalSection
+EndGlobal

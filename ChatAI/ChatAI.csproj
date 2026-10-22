@@ -1,0 +1,97 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UseWPF>true</UseWPF>
+		<EnableWinRT>true</EnableWinRT>
+	
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="Resource\Images\fondos12.jpg" />
+	  <None Remove="Resource\Images\fondos13.jpg" />
+	  <None Remove="Resource\Images\fondos14.jpg" />
+	  <None Remove="Resource\Images\fondos15.jpg" />
+	  <None Remove="Resource\Images\grillo2.jpg" />
+	  <None Remove="Resource\Images\grillo3.jpg" />
+	  <None Remove="Resource\Images\katana-sword.gif" />
+	  <None Remove="Resource\Images\katana3.jpg" />
+	  <None Remove="Resource\Images\katanavacia2.png" />
+	  <None Remove="Resource\Images\krzystof-knifes.gif" />
+	  <None Remove="Resource\Images\kunai.jpg" />
+	  <None Remove="Resource\Images\kunai12.jpg" />
+	  <None Remove="Resource\Images\mia.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Resource Include="Resource\Images\fondos13.jpg">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Resource\Images\fondos14.jpg">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Resource\Images\fondos15.jpg">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Resource\Images\katana-sword.gif">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Content Include="Resource\Images\katana3.jpg">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Resource Include="Resource\Images\mia.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Resource\Images\fondos12.jpg">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Resource\Images\krzystof-knifes.gif">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="NAudio" Version="2.2.1" />
+	  <PackageReference Include="System.Speech" Version="9.0.2" />
+	  <PackageReference Include="System.Text.Json" Version="9.0.2" />
+	  <PackageReference Include="Vosk" Version="0.3.38" />
+	  <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Update="Resource\vosk-model-small-es-0.42\**">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+	<ItemGroup>
+	  <Resource Include="Resource\Images\grillo3.jpg">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Resource\Images\katanavacia2.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Resource\Images\kunai.jpg">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Resource\Images\kunai12.jpg">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+		
+	</ItemGroup>
+	<ItemGroup>
+	  <Compile Update="Settings1.Designer.cs">
+	    <DesignTimeSharedInput>True</DesignTimeSharedInput>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Settings1.settings</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+	<ItemGroup>
+	  <None Update="Settings1.settings">
+	    <Generator>SettingsSingleFileGenerator</Generator>
+	    <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
+	  </None>
+	</ItemGroup>
+
+</Project>
